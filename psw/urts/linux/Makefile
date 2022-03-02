@@ -45,6 +45,7 @@ CFLAGS += $(ADDED_INC)
 VTUNE_DIR = $(LINUX_EXTERNAL_DIR)/vtune/linux
 
 INC += -I$(SGX_HEADER_DIR)                \
+       -I$(COMMON_DIR)/inc                \
        -I$(COMMON_DIR)/inc/internal       \
        -I$(COMMON_DIR)/inc/internal/linux \
        -I$(LINUX_PSW_DIR)/enclave_common  \

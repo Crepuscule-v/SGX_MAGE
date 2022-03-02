@@ -67,6 +67,7 @@ EnclaveCreatorST::EnclaveCreatorST()
     m_ctx = NULL;
     m_eid = EID;
     m_quota = 0;
+    memset(&m_mage, 0, sizeof(m_mage));
 }
 
 EnclaveCreatorST::~EnclaveCreatorST()
@@ -124,7 +125,7 @@ int EnclaveCreatorST::create_enclave(secs_t *secs, sgx_enclave_id_t *enclave_id,
         se_trace(SE_TRACE_DEBUG, "ERROR - EVP_DigestUpdate: %s.\n", ERR_error_string(ERR_get_error(), NULL));
         return SGX_ERROR_UNEXPECTED;
     }
-
+    m_mage.size += DATA_BLOCK_SIZE;
     *enclave_id = m_eid;
     *start_addr = secs->base;
     return SGX_SUCCESS;
@@ -181,6 +182,8 @@ int EnclaveCreatorST::add_enclave_page(sgx_enclave_id_t enclave_id, void *src, u
         return SGX_ERROR_UNEXPECTED;
     }
 
+    m_mage.size += DATA_BLOCK_SIZE;
+
     /* If the page need to eextend, do eextend. */
     if((attr & ADD_EXTEND_PAGE) == ADD_EXTEND_PAGE)
     {
@@ -201,6 +204,7 @@ int EnclaveCreatorST::add_enclave_page(sgx_enclave_id_t enclave_id, void *src, u
                 return SGX_ERROR_UNEXPECTED;
             }
 
+            m_mage.size += DATA_BLOCK_SIZE;
             for(int j = 0; j < EEXTEND_TIME; j++)
             {
                 memcpy_s(data_block, sizeof(data_block), pdata, DATA_BLOCK_SIZE);
@@ -211,6 +215,7 @@ int EnclaveCreatorST::add_enclave_page(sgx_enclave_id_t enclave_id, void *src, u
                 }
                 pdata += DATA_BLOCK_SIZE;
                 page_offset += DATA_BLOCK_SIZE;
+                m_mage.size += DATA_BLOCK_SIZE;
             }
         }
     }
@@ -223,6 +228,9 @@ int EnclaveCreatorST::init_enclave(sgx_enclave_id_t enclave_id, enclave_css_t *e
 {
     assert(m_ctx != NULL);
     UNUSED(enclave_id), UNUSED(enclave_css), UNUSED(lc), UNUSED(prd_css_file);
+
+    memcpy_s(m_mage.digest, SGX_HASH_SIZE, reinterpret_cast<uint8_t*>(m_ctx->md_data), SGX_HASH_SIZE);
+
 
     uint8_t temp_hash[SGX_HASH_SIZE];
     memset(temp_hash, 0, SGX_HASH_SIZE);
@@ -290,7 +298,7 @@ bool EnclaveCreatorST::is_driver_compatible()
 }
 
 
-int EnclaveCreatorST::get_enclave_info(uint8_t *hash, int size, uint64_t *quota)
+int EnclaveCreatorST::get_enclave_info(uint8_t *hash, int size, uint64_t *quota, sgx_mage_entry_t *mage_t)
 {
     if(hash == NULL || size != SGX_HASH_SIZE || m_hash_valid_flag == false)
     {
@@ -302,6 +310,12 @@ int EnclaveCreatorST::get_enclave_info(uint8_t *hash, int size, uint64_t *quota)
         memcpy_s(hash, size, m_enclave_hash, SGX_HASH_SIZE);
     }
     *quota = m_quota;
+    if (mage_t == NULL) {
+        se_trace(SE_TRACE_DEBUG, "ERROR: something went wrong in the function get_enclave_hash().\n");
+    } else {
+        memcpy_s(mage_t, sizeof(m_mage), &m_mage, sizeof(m_mage));
+    }
+
     return SGX_SUCCESS;
 }
 

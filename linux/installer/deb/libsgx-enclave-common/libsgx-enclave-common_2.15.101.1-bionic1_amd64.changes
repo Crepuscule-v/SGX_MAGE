@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Mon, 29 Jul 2019 15:23:51 +0800
+Source: libsgx-enclave-common
+Binary: libsgx-enclave-common libsgx-enclave-common-dev
+Architecture: source amd64
+Version: 2.15.101.1-bionic1
+Distribution: unstable
+Urgency: low
+Maintainer: <xiangquan.liu@intel.com>
+Changed-By: Xiangquan Liu <xiangquan.liu@intel.com>
+Description:
+ libsgx-enclave-common - Intel(R) Software Guard Extensions Enclave Common Loader
+ libsgx-enclave-common-dev - Intel(R) Software Guard Extensions Enclave Common Loader for Deve
+Changes:
+ libsgx-enclave-common (2.15.101.1-bionic1) unstable; urgency=low
+ .
+   * Initial Release
+Checksums-Sha1:
+ 481ac3b16bb1295463355f6739648133111441c8 1083 libsgx-enclave-common_2.15.101.1-bionic1.dsc
+ 32dacda7b89911f08b7c479b8c7e56d773c895ee 41574 libsgx-enclave-common_2.15.101.1.orig.tar.gz
+ 76c4d4fc525362d1a89010a946a03852009c9737 21008 libsgx-enclave-common_2.15.101.1-bionic1.debian.tar.xz
+ 14691af174efc9cafac7f70c82f8a0954280449d 3828 libsgx-enclave-common-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 14e4e484d2bcc1adffa352c441002eee2dc6146b 23452 libsgx-enclave-common-dev_2.15.101.1-bionic1_amd64.deb
+ 0ba2efe1d5480c54f79ebd90602c61c663046f7c 6402 libsgx-enclave-common_2.15.101.1-bionic1_amd64.buildinfo
+ e9f26865fba7e3b6d3aef7421a0d3fbd192a0ea4 32208 libsgx-enclave-common_2.15.101.1-bionic1_amd64.deb
+Checksums-Sha256:
+ 6a3890d3cb4331df236df1137c6542f379e2d8ad020a8e11a71ef034156ddfa7 1083 libsgx-enclave-common_2.15.101.1-bionic1.dsc
+ a56b90447637f76f70133d7a4a6ba9f7d4e75177de19fd9f776231d884c607d2 41574 libsgx-enclave-common_2.15.101.1.orig.tar.gz
+ 79ac79557b966ee50b7a056fc530439c43a0e98ed074832d35f7fb5f1ab05eba 21008 libsgx-enclave-common_2.15.101.1-bionic1.debian.tar.xz
+ 4268d90270c3cede429e19403c68a8ad66b4239ea436e0bc62713e5ae59747dd 3828 libsgx-enclave-common-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 0d9c2394e9f948b9f3f41cec36af229c6167bff3fe594cdd86b1dbac8471c499 23452 libsgx-enclave-common-dev_2.15.101.1-bionic1_amd64.deb
+ 43fcd1edfa30f1a4b4c9962d3ebe7980b8cb245386cb14bb0405cbd0238b8d38 6402 libsgx-enclave-common_2.15.101.1-bionic1_amd64.buildinfo
+ 04d3467688fcc04145c84dba38af355d7526a1393d6d51db48f7e311ac4fdd0c 32208 libsgx-enclave-common_2.15.101.1-bionic1_amd64.deb
+Files:
+ cf343dedf9666f523adf418d60c64f07 1083 libs optional libsgx-enclave-common_2.15.101.1-bionic1.dsc
+ f826d5f472783954ff5a919d3df55204 41574 libs optional libsgx-enclave-common_2.15.101.1.orig.tar.gz
+ 0bdfc79b566731585075337c24adc28c 21008 libs optional libsgx-enclave-common_2.15.101.1-bionic1.debian.tar.xz
+ c4c739d60f14e5c18ef9ecb4d59aee72 3828 debug optional libsgx-enclave-common-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 5fd6f8eda82e3f18b94101e2c85975cb 23452 devel optional libsgx-enclave-common-dev_2.15.101.1-bionic1_amd64.deb
+ a123effd3c064b9f7252938dce58f0fb 6402 libs optional libsgx-enclave-common_2.15.101.1-bionic1_amd64.buildinfo
+ 486910b7fca03fd974a572d0fa31ebfc 32208 libs optional libsgx-enclave-common_2.15.101.1-bionic1_amd64.deb

@@ -66,7 +66,9 @@ INCLUDE := -I$(LINUX_PSW_DIR)/ae/inc                   \
            -I$(SGX_HEADER_DIR)                         \
            -I$(SGX_HEADER_DIR)/tlibc                   \
            -I$(COMMON_DIR)/inc                         \
-           -I$(COMMON_DIR)/inc/internal
+           -I$(COMMON_DIR)/inc/internal                \
+           -I$(COMMON_DIR)/inc/             
+
 
 SGXSIGN   := $(SGX_BIN_DIR)/sgx_sign
 EDGER8R   := $(SGX_BIN_DIR)/sgx_edger8r

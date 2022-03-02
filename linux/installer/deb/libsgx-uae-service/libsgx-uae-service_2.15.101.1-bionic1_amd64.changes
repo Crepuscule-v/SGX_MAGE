@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 29 Jul 2019 15:23:51 +0800
+Source: libsgx-uae-service
+Binary: libsgx-uae-service
+Architecture: source amd64
+Version: 2.15.101.1-bionic1
+Distribution: unstable
+Urgency: low
+Maintainer: <xiangquan.liu@intel.com>
+Changed-By: Xiangquan Liu <xiangquan.liu@intel.com>
+Description:
+ libsgx-uae-service - Intel(R) Software Guard Extensions Untrusted AE Service
+Changes:
+ libsgx-uae-service (2.15.101.1-bionic1) unstable; urgency=low
+ .
+   * Initial Release
+Checksums-Sha1:
+ 5964dc110d4fb2b4102dba854f360380853dab13 972 libsgx-uae-service_2.15.101.1-bionic1.dsc
+ eeb9d3ffa4632b1fb7c588be129d289d4933238e 30102 libsgx-uae-service_2.15.101.1.orig.tar.gz
+ 82143818b2d790c43e84b78dc07c43d858660da1 20336 libsgx-uae-service_2.15.101.1-bionic1.debian.tar.xz
+ 18c37c370090a11a11302ffa05c34d49bef41d3c 3244 libsgx-uae-service-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 59e1ccc2b4f20cbf6a999ad29397b45d6c170031 6015 libsgx-uae-service_2.15.101.1-bionic1_amd64.buildinfo
+ 1f1f6a782213b1b5782220d74fb6da000eb2b950 24880 libsgx-uae-service_2.15.101.1-bionic1_amd64.deb
+Checksums-Sha256:
+ 94d28cddeb6bc37e7ddab8820f9dbd46cac5ac903a76da15bf83e1e71e0f6ff5 972 libsgx-uae-service_2.15.101.1-bionic1.dsc
+ a0373efdb52167de87fce195496e74e07c13aa78ba521935124da73f9422edbb 30102 libsgx-uae-service_2.15.101.1.orig.tar.gz
+ 0bca5d25de889a275b47837f79ab685cce0182435c6ecb5a306015ef633147a0 20336 libsgx-uae-service_2.15.101.1-bionic1.debian.tar.xz
+ e4c77d4f9bd2ee35e7cb466d4000c4cc91ea391f804faeafc3dcd64d4d558b26 3244 libsgx-uae-service-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 078f48cad58b5ff43547606e22e45c145f614fe5d0e963f66c3cca5b54e4dafc 6015 libsgx-uae-service_2.15.101.1-bionic1_amd64.buildinfo
+ 2efa013c2e537a9756ab8634c113419cfeea03b0abc9622d18feb995f26220e4 24880 libsgx-uae-service_2.15.101.1-bionic1_amd64.deb
+Files:
+ cbbbd919b60ba6c15164fc2082c33cae 972 libs optional libsgx-uae-service_2.15.101.1-bionic1.dsc
+ 923721d457d1d4f58f82b9874adc24db 30102 libs optional libsgx-uae-service_2.15.101.1.orig.tar.gz
+ 1940d7a0bfff2377ccd2927dd6a9f754 20336 libs optional libsgx-uae-service_2.15.101.1-bionic1.debian.tar.xz
+ c97e153fdfd4a0e9e47677cbda8ad195 3244 debug optional libsgx-uae-service-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ cdc05ddf9210f2207f5ce2fa14fe350c 6015 libs optional libsgx-uae-service_2.15.101.1-bionic1_amd64.buildinfo
+ 06539b9654218ead8fb7937e1b9a4e66 24880 libs optional libsgx-uae-service_2.15.101.1-bionic1_amd64.deb

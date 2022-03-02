@@ -37,8 +37,25 @@
 
 #include "enclave_creator.h"
 #include "sgx_eid.h"
+#include "sgx_mage.h"
+
 
 #define SIZE_NAMED_VALUE 8
+
+
+struct evp_md_ctx_st 
+{
+    const EVP_MD *digest;
+    ENGINE *engine;             /* functional reference if 'digest' is
+                                 * ENGINE-provided */
+    unsigned long flags;
+    void *md_data;
+    /* Public key context for sign/verify */
+    EVP_PKEY_CTX *pctx;
+    /* Update function: usually copied from EVP_MD */
+    int (*update) (EVP_MD_CTX *ctx, const void *data, size_t count);
+} /* EVP_MD_CTX */ ;
+
 
 class EnclaveCreatorST : public EnclaveCreator
 {
@@ -55,7 +72,7 @@ public:
     bool use_se_hw() const;
     bool is_EDMM_supported(sgx_enclave_id_t enclave_id);
     bool is_driver_compatible();
-    int get_enclave_info(uint8_t *hash, int size, uint64_t *quota);
+    int get_enclave_info(uint8_t *hash, int size, uint64_t *quota, sgx_mage_entry_t *mage_t);
     int emodpr(uint64_t addr, uint64_t size, uint64_t flag);
     int mktcs(uint64_t tcs_addr);
     int trim_range(uint64_t fromaddr, uint64_t toaddr);
@@ -68,6 +85,7 @@ private:
     bool m_hash_valid_flag;
     sgx_enclave_id_t m_eid;
     uint64_t m_quota;
+    sgx_mage_entry_t m_mage;
 };
 
 #endif

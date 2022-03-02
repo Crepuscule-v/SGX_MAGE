@@ -81,6 +81,8 @@ private:
     int build_pages(const uint64_t start_rva, const uint64_t size, const void *source, const sec_info_t &sinfo, const uint32_t attr);
     bool is_relocation_page(const uint64_t rva, std::vector<uint8_t> *bitmap);
 
+    int build_mage_pages();
+
     bool is_ae(const enclave_css_t *enclave_css);
     bool is_metadata_buffer(uint32_t offset, uint32_t size);
     bool is_enclave_buffer(uint64_t offset, uint64_t size);

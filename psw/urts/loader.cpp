@@ -230,10 +230,7 @@ int CLoader::build_sections(std::vector<uint8_t> *bitmap)
     Section* last_section = NULL;
 
     for(unsigned int i = 0; i < sections.size() ; i++)
-    {
-        
-        
-        
+    {   
         if((META_DATA_MAKE_VERSION(SGX_1_5_MAJOR_VERSION,SGX_1_5_MINOR_VERSION ) == m_metadata->version) &&
             (last_section != NULL) &&
            (ROUND_TO_PAGE(last_section->virtual_size() + last_section->get_rva()) < ROUND_TO_PAGE(ROUND_TO_PAGE(last_section->virtual_size()) + last_section->get_rva())) &&
@@ -259,7 +256,6 @@ int CLoader::build_sections(std::vector<uint8_t> *bitmap)
         if(SGX_SUCCESS != (ret = build_mem_region(sec_info)))
             return ret;
     }
-    
     
     
     if((META_DATA_MAKE_VERSION(SGX_1_5_MAJOR_VERSION,SGX_1_5_MINOR_VERSION ) == m_metadata->version) &&
@@ -305,13 +301,76 @@ int CLoader::build_pages(const uint64_t start_rva, const uint64_t size, const vo
 
     assert(IS_PAGE_ALIGNED(start_rva) && IS_PAGE_ALIGNED(size));
 
+
+    uint64_t skip_rva = 0;
+    uint64_t skip_size = 0;
+    const Section* mage_section = m_parser.get_mage_section();
+    if (mage_section != NULL)
+    {
+        skip_rva = mage_section->get_rva();
+        skip_size = mage_section->virtual_size();
+    }
+
+
     while(offset < size)
     {
         //call driver to add page;
-        if(SGX_SUCCESS != (ret = get_enclave_creator()->add_enclave_page(ENCLAVE_ID_IOCTL, GET_PTR(void, source, 0), rva, sinfo, attr)))
+        if (rva >= skip_rva + skip_size || rva + SE_PAGE_SIZE <= skip_rva)
+        {
+            if(SGX_SUCCESS != (ret = get_enclave_creator()->add_enclave_page(ENCLAVE_ID_IOCTL, GET_PTR(void, source, 0), rva, sinfo, attr)))
+            {
+                //if add page failed , we should remove enclave somewhere;
+                return ret;
+            }
+        }
+        offset += SE_PAGE_SIZE;
+        rva += SE_PAGE_SIZE;
+    }
+    return SGX_SUCCESS;
+}
+
+
+int CLoader::build_mage_pages()
+{
+    int ret = SGX_SUCCESS;
+
+    const Section* mage_section = m_parser.get_mage_section_ex();
+    if (mage_section == NULL) return ret;
+
+    uint64_t offset = 0;
+    uint64_t rva = mage_section->get_rva();
+    uint64_t size = mage_section->virtual_size();
+    const void *source = mage_section->raw_data();
+    sec_info_t sinfo;
+    for(unsigned int i = 0; i< sizeof(sinfo.reserved)/sizeof(sinfo.reserved[0]); i++)
+    {
+        sinfo.reserved[i] = 0;
+    }
+    sinfo.flags = 0x201;            // Set Page Permissions
+    uint32_t attr = 3;
+
+    assert(IS_PAGE_ALIGNED(rva) && IS_PAGE_ALIGNED(size));
+
+    se_trace(SE_TRACE_DEBUG, "\n\nbuild_mage_pages: %lx %lx\n", rva, rva + size);
+
+    for(unsigned int i = 0; i< size; i++)
+    {
+        se_trace(SE_TRACE_DEBUG, "%02x", reinterpret_cast<const uint8_t*>(source)[i]);
+    }
+    se_trace(SE_TRACE_DEBUG, "\n\nmage content %lx\n", size);
+
+
+    while(offset < size)
+    {
+        //call driver to add page;
+        if(SGX_SUCCESS != (ret = get_enclave_creator()->add_enclave_page(
+            ENCLAVE_ID_IOCTL, GET_PTR(void, source, 0), rva, sinfo, attr
+        )))
         {
             //if add page failed , we should remove enclave somewhere;
             return ret;
+        } else {
+            se_trace(SE_TRACE_DEBUG, "\n\nadd_page: %lx\n", offset);
         }
         offset += SE_PAGE_SIZE;
         rva += SE_PAGE_SIZE;
@@ -319,6 +378,7 @@ int CLoader::build_pages(const uint64_t start_rva, const uint64_t size, const vo
 
     return SGX_SUCCESS;
 }
+
 
 int CLoader::post_init_action(layout_t *layout_start, layout_t *layout_end, uint64_t delta)
 {
@@ -632,6 +692,7 @@ int CLoader::build_secs(sgx_attributes_t * const secs_attr, sgx_config_id_t *con
 
     return ret;
 }
+
 int CLoader::build_image(SGXLaunchToken * const lc, sgx_attributes_t * const secs_attr, sgx_config_id_t *config_id, sgx_config_svn_t config_svn, le_prd_css_file_t *prd_css_file, sgx_misc_attribute_t * const misc_attr)
 {
     int ret = SGX_SUCCESS;
@@ -677,6 +738,14 @@ int CLoader::build_image(SGXLaunchToken * const lc, sgx_attributes_t * const sec
         goto fail;
     }
 
+    // build mage section
+    if(SGX_SUCCESS != (ret = build_mage_pages()))
+    {
+        SE_TRACE(SE_TRACE_WARNING, "build mage sections failed\n");
+        goto fail;
+    }
+
+    
     //initialize Enclave
     ret = get_enclave_creator()->init_enclave(ENCLAVE_ID_IOCTL, const_cast<enclave_css_t *>(&m_metadata->enclave_css), lc, prd_css_file);
     if(SGX_SUCCESS != ret)

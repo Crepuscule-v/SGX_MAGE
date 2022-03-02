@@ -13,6 +13,7 @@ add_library(oal SHARED ${OAL_LIB_SRCS}
 target_include_directories(oal PRIVATE
 	${PROJECT_SOURCE_DIR}/common
 	${PROJECT_SOURCE_DIR}/common/oal
+	${PROJECT_SOURCE_DIR}/../../../../common/inc
 	${PROJECT_SOURCE_DIR}/../../inc
 	${PROJECT_SOURCE_DIR}/../../inc/internal
 	${SGX_HEADER_DIR}

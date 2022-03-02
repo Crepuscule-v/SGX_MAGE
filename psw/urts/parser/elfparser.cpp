@@ -37,6 +37,8 @@
 #include <sys/mman.h>
 #include <vector>
 #include <tuple>
+#include "sgx_mage.h"
+
 
 namespace {
 /** the callback function to filter a section.
@@ -515,19 +517,37 @@ si_flags_t page_attr_to_si_flags(uint32_t page_attr)
 }
 
 Section* build_section(const uint8_t* raw_data, uint64_t size, uint64_t virtual_size,
-                       uint64_t rva, uint32_t page_attr)
+                       uint64_t rva, uint64_t offset, uint32_t page_attr)
 {
     si_flags_t sf = page_attr_to_si_flags(page_attr);
 
     if (sf != SI_FLAG_REG)
-        return new Section(raw_data, size, virtual_size, rva, sf);
+        return new Section(raw_data, size, virtual_size, rva, offset, sf);
 
     return NULL;
 }
 
+Section* build_mage_section(const uint8_t *start_addr, const ElfW(Ehdr) *elf_hdr)
+{
+    const ElfW(Shdr) *mage_shdr = get_section_by_name(elf_hdr, SGX_MAGE_SEC_NAME);
+    if (NULL == mage_shdr) {
+        SE_TRACE(SE_TRACE_DEBUG, "NO MAGE section found\n");
+        return NULL;
+    }
+
+    si_flags_t sf = SI_FLAG_REG | SI_FLAG_R;
+    return new Section(
+        GET_PTR(uint8_t, start_addr, mage_shdr->sh_offset),
+        mage_shdr->sh_size, mage_shdr->sh_size, mage_shdr->sh_addr, mage_shdr->sh_offset, sf
+    );
+
+}
+
+
 bool build_regular_sections(const uint8_t* start_addr,
                             std::vector<Section *>& sections,
                             const Section*& tls_sec,
+                            Section*& mage_sec,
                             uint64_t& metadata_offset,
                             uint64_t& metadata_block_size)
 {
@@ -541,6 +561,8 @@ bool build_regular_sections(const uint8_t* start_addr,
     if (get_meta_property(start_addr, elf_hdr, metadata_offset, metadata_block_size) == false)
         return false;
 
+    mage_sec = build_mage_section(start_addr, elf_hdr);
+
     for (unsigned idx = 0; idx < elf_hdr->e_phnum; ++idx, ++prg_hdr)
     {
         Section* sec = NULL;
@@ -550,7 +572,8 @@ bool build_regular_sections(const uint8_t* start_addr,
         case PT_LOAD:
             sec = build_section(GET_PTR(uint8_t, start_addr, prg_hdr->p_offset),
                                 (uint64_t)prg_hdr->p_filesz, (uint64_t)prg_hdr->p_memsz,
-                                (uint64_t)prg_hdr->p_vaddr, (uint32_t) prg_hdr->p_flags);
+                                (uint64_t)prg_hdr->p_vaddr, (uint64_t) prg_hdr->p_offset, 
+                                (uint32_t) prg_hdr->p_flags);
             se_trace(SE_TRACE_DEBUG, "LOAD Section: %d\n", section_count++);
             se_trace(SE_TRACE_DEBUG, "Flags = 0x%016lX\n", (uint64_t)prg_hdr->p_flags);
             se_trace(SE_TRACE_DEBUG, "VAddr = 0x%016lX\n", (uint64_t)prg_hdr->p_vaddr);
@@ -569,7 +592,8 @@ bool build_regular_sections(const uint8_t* start_addr,
 
             sec = build_section(GET_PTR(uint8_t, start_addr, prg_hdr->p_offset),
                                 (uint64_t)prg_hdr->p_filesz, aligned_virtual_size,
-                                (uint64_t)prg_hdr->p_vaddr, (uint32_t) prg_hdr->p_flags);
+                                (uint64_t)prg_hdr->p_vaddr, (uint64_t) prg_hdr->p_offset,
+                                (uint32_t) prg_hdr->p_flags);
             se_trace(SE_TRACE_DEBUG, "TLS Section: %d\n", section_count++);
             se_trace(SE_TRACE_DEBUG, "Flags = 0x%016lX\n", (uint64_t)prg_hdr->p_flags);
             se_trace(SE_TRACE_DEBUG, "VAddr = 0x%016lX\n", (uint64_t)prg_hdr->p_vaddr);
@@ -618,7 +642,7 @@ const Section* get_max_rva_section(const std::vector<Section*> sections)
 
 ElfParser::ElfParser (const uint8_t* start_addr, uint64_t len)
     :m_start_addr(start_addr), m_len(len), m_bin_fmt(BF_UNKNOWN),
-     m_tls_section(NULL), m_metadata_offset(0), m_metadata_block_size(0)
+     m_tls_section(NULL), m_mage_section(NULL), m_metadata_offset(0), m_metadata_block_size(0)
 {
     memset(&m_dyn_info, 0, sizeof(m_dyn_info));
 }
@@ -677,7 +701,7 @@ sgx_status_t ElfParser::run_parser()
     }
 
     /* build regular sections */
-    if (build_regular_sections(m_start_addr, m_sections, m_tls_section, m_metadata_offset, m_metadata_block_size))
+    if (build_regular_sections(m_start_addr, m_sections, m_tls_section, m_mage_section, m_metadata_offset, m_metadata_block_size))
         return SGX_SUCCESS;
     else {
         SE_TRACE_ERROR("Regular sections incorrect\n");
@@ -757,6 +781,22 @@ const std::vector<Section *>& ElfParser::get_sections() const
 const Section* ElfParser::get_tls_section() const
 {
     return m_tls_section;
+}
+
+const Section* ElfParser::get_mage_section() const
+{
+    return m_mage_section;
+}
+
+const Section* ElfParser::get_mage_section_ex() const
+{
+    if (m_for_sign) return NULL;
+    return m_mage_section;
+}
+
+void ElfParser::set_for_sign(bool for_sign)
+{
+    m_for_sign = for_sign;
 }
 
 uint64_t ElfParser::get_symbol_rva(const char* name) const

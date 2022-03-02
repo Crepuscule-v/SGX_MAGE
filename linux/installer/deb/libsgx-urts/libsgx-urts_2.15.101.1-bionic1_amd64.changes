@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 29 Jul 2019 15:23:51 +0800
+Source: libsgx-urts
+Binary: libsgx-urts
+Architecture: source amd64
+Version: 2.15.101.1-bionic1
+Distribution: unstable
+Urgency: low
+Maintainer: <xiangquan.liu@intel.com>
+Changed-By: Xiangquan Liu <xiangquan.liu@intel.com>
+Description:
+ libsgx-urts - Intel(R) Software Guard Extensions uRTS
+Changes:
+ libsgx-urts (2.15.101.1-bionic1) unstable; urgency=low
+ .
+   * Initial Release
+Checksums-Sha1:
+ 9576c022605b6bccebc3cb223acf4a78b5b44ade 909 libsgx-urts_2.15.101.1-bionic1.dsc
+ 2f6b7980f0930d92918efcd039c426fd1e81f927 88313 libsgx-urts_2.15.101.1.orig.tar.gz
+ 504af0f33a9cc44baa2efbbadab9daa03ddb2de9 20372 libsgx-urts_2.15.101.1-bionic1.debian.tar.xz
+ 56980e1ee58b539fe17a05db4a70c3c855c71fba 11504 libsgx-urts-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ c1d0dc238229103a014e0ac5626cd506ef17e926 5941 libsgx-urts_2.15.101.1-bionic1_amd64.buildinfo
+ ce656074ebb6b242f13f9fdeafa54ece0405ea10 63644 libsgx-urts_2.15.101.1-bionic1_amd64.deb
+Checksums-Sha256:
+ 3be90af9043b4d97f82ef0fb41439304b0b74afbce724864fbf771056e023934 909 libsgx-urts_2.15.101.1-bionic1.dsc
+ 3be38890cdbda4e5cbe53b1574a11bad64a04d03b673943d201474d88bb500c5 88313 libsgx-urts_2.15.101.1.orig.tar.gz
+ a4edea9d3ef1666f0a0ab524f3566284099e3f49070f4660d32b930726be11f2 20372 libsgx-urts_2.15.101.1-bionic1.debian.tar.xz
+ 1b727bcfef484768e807015d661f8b19ba7ecaeec94e7f6b7143663432e3520d 11504 libsgx-urts-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 06d49e1da270fe1ccbeb32b94b9d42f0f18832d5bb3be1b7747aa1039e8423e9 5941 libsgx-urts_2.15.101.1-bionic1_amd64.buildinfo
+ 80505f970d22ecb5c74139c2dea341812e01cf9ccbfc42fafd9ceb02ad9c2d44 63644 libsgx-urts_2.15.101.1-bionic1_amd64.deb
+Files:
+ 2c7724b1275a503220489ede204b4a3c 909 libs optional libsgx-urts_2.15.101.1-bionic1.dsc
+ 2b2612b2c42c442dc53ece163675f6a3 88313 libs optional libsgx-urts_2.15.101.1.orig.tar.gz
+ 5b84dd969ee7b3de10d92bbd7ccbef72 20372 libs optional libsgx-urts_2.15.101.1-bionic1.debian.tar.xz
+ 7e5d2409e5e29dc607ebfed70f983867 11504 debug optional libsgx-urts-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ c46db4888d0fdf02068dce342f39c565 5941 libs optional libsgx-urts_2.15.101.1-bionic1_amd64.buildinfo
+ 37c8deac524cff4fb33e2fa05c182bd7 63644 libs optional libsgx-urts_2.15.101.1-bionic1_amd64.deb

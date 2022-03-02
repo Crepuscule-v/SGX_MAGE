@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Mon, 29 Jul 2019 15:23:51 +0800
+Source: libsgx-quote-ex
+Binary: libsgx-quote-ex libsgx-quote-ex-dev
+Architecture: source amd64
+Version: 2.15.101.1-bionic1
+Distribution: unstable
+Urgency: low
+Maintainer: <xiangquan.liu@intel.com>
+Changed-By: Xiangquan Liu <xiangquan.liu@intel.com>
+Description:
+ libsgx-quote-ex - Intel(R) Software Guard Extensions Unified Quote Service
+ libsgx-quote-ex-dev - Intel(R) Software Guard Extensions Unified Quote Service for Deve
+Changes:
+ libsgx-quote-ex (2.15.101.1-bionic1) unstable; urgency=low
+ .
+   * Initial Release
+Checksums-Sha1:
+ f45ff7f8f9166cadcdb7ae33c1cf2a413274692d 1020 libsgx-quote-ex_2.15.101.1-bionic1.dsc
+ 46e4ea076a908ec3276ff837e1c23e61cdf397b9 128774 libsgx-quote-ex_2.15.101.1.orig.tar.gz
+ d350e96c500b1c48f5791a1113187aa87f43b3b7 20392 libsgx-quote-ex_2.15.101.1-bionic1.debian.tar.xz
+ d3d5f556f01054842110b50340d363165502d3b3 23432 libsgx-quote-ex-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 25f11bbd6be2720527276086d7f68fb6dfea9f13 24192 libsgx-quote-ex-dev_2.15.101.1-bionic1_amd64.deb
+ e89be239b1cec5467c4f0146e1e5c258680785b4 6315 libsgx-quote-ex_2.15.101.1-bionic1_amd64.buildinfo
+ e435894b18880d61e39762cac69f767e2bf2529f 73620 libsgx-quote-ex_2.15.101.1-bionic1_amd64.deb
+Checksums-Sha256:
+ cb693f0984d684ebaed5da2c99c03c79816aee56fb9478eeaec3db4ca5a895da 1020 libsgx-quote-ex_2.15.101.1-bionic1.dsc
+ db8cd48313a8dd43e8b56185648b5d4a1b90ef111fb6a9f74488ac665b91de7a 128774 libsgx-quote-ex_2.15.101.1.orig.tar.gz
+ 28b552876d585380e5be77b847f024fac09e8e6e5123275697fd0d326a64aaca 20392 libsgx-quote-ex_2.15.101.1-bionic1.debian.tar.xz
+ 46cf6a2f196dbbd36029fe32d98d6afe617dd7b2f47c8681a49c771ebff22bb1 23432 libsgx-quote-ex-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 7760844de707ba73eecff64ad3da20fbaa8d1905035fddf53e6c31b754df1dbc 24192 libsgx-quote-ex-dev_2.15.101.1-bionic1_amd64.deb
+ 4c490086ec06f9bbc1138a3237bc6ea10201af42e33820c5e5c87deb1dc59152 6315 libsgx-quote-ex_2.15.101.1-bionic1_amd64.buildinfo
+ 00632d17f0870d979512db96c716438f1def07208c5333a61d3696877b266ff9 73620 libsgx-quote-ex_2.15.101.1-bionic1_amd64.deb
+Files:
+ 72a315a67a411cde0a39e543bace0e52 1020 libs optional libsgx-quote-ex_2.15.101.1-bionic1.dsc
+ 8fee996f0c0dd07d46ffc61c39e5fa6f 128774 libs optional libsgx-quote-ex_2.15.101.1.orig.tar.gz
+ c0c5a853554bfab6cd58665f2a49a66b 20392 libs optional libsgx-quote-ex_2.15.101.1-bionic1.debian.tar.xz
+ a5e3736af3bfdf20edd260a53ab8f8a1 23432 debug optional libsgx-quote-ex-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 309ef63b259686b68e54f2994728b5ef 24192 devel optional libsgx-quote-ex-dev_2.15.101.1-bionic1_amd64.deb
+ 0b9e064c9d3b7b1cf804c6dfaf2911e1 6315 libs optional libsgx-quote-ex_2.15.101.1-bionic1_amd64.buildinfo
+ fb3341559920171088aa7d8af9b5ef09 73620 libs optional libsgx-quote-ex_2.15.101.1-bionic1_amd64.deb

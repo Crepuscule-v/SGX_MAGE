@@ -37,16 +37,18 @@
 #include "uncopyable.h"
 #include <stdint.h>
 
+typedef uint64_t si_flags_t;
+
 class Section : private Uncopyable
 {
 public:
     Section(const uint8_t* start_addr, uint64_t size, uint64_t virt_size,
-            uint64_t rva, si_flags_t sf);
+            uint64_t rva, uint64_t offset, si_flags_t sf);
     ~Section();
 
     const uint8_t* raw_data(void) const;
     uint64_t raw_data_size(void) const;
-
+    uint64_t get_offset(void) const;    
     uint64_t get_rva(void) const;
 
     // The virtual size is rounded to align with 1-page.
@@ -59,6 +61,7 @@ private:
     uint64_t        m_raw_data_size;
     uint64_t        m_rva;
     uint64_t        m_virtual_size;
+    uint64_t        m_offset;
     si_flags_t      m_si_flag;
 };
 

@@ -1,0 +1,84 @@
+Format: 1.8
+Date: Mon, 29 Jul 2019 15:23:51 +0800
+Source: sgx-aesm-service
+Binary: sgx-aesm-service libsgx-aesm-launch-plugin libsgx-ae-le libsgx-aesm-epid-plugin libsgx-ae-epid libsgx-aesm-quote-ex-plugin libsgx-aesm-ecdsa-plugin libsgx-aesm-pce-plugin libsgx-ae-pce
+Architecture: source amd64
+Version: 2.15.101.1-bionic1
+Distribution: unstable
+Urgency: low
+Maintainer: <xiangquan.liu@intel.com>
+Changed-By: Xiangquan Liu <xiangquan.liu@intel.com>
+Description:
+ libsgx-ae-epid - Intel(R) Software Guard Extensions QE and PvE
+ libsgx-ae-le - Intel(R) Software Guard Extensions LE
+ libsgx-ae-pce - Intel(R) Software Guard Extensions PCE
+ libsgx-aesm-ecdsa-plugin - ECDSA Quote Plugin for Intel(R) Software Guard Extensions AESM Se
+ libsgx-aesm-epid-plugin - EPID Quote Plugin for Intel(R) Software Guard Extensions AESM Ser
+ libsgx-aesm-launch-plugin - Launch Plugin for Intel(R) Software Guard Extensions AESM Service
+ libsgx-aesm-pce-plugin - PCE Plugin for Intel(R) Software Guard Extensions AESM Service
+ libsgx-aesm-quote-ex-plugin - Unified Quote Plugin for Intel(R) Software Guard Extensions AESM
+ sgx-aesm-service - Intel(R) Software Guard Extensions AESM Service
+Changes:
+ sgx-aesm-service (2.15.101.1-bionic1) unstable; urgency=low
+ .
+   * Initial Release
+Checksums-Sha1:
+ cbb2181762c430c03cc356be24efbc9919633a45 1553 sgx-aesm-service_2.15.101.1-bionic1.dsc
+ 81279e0acaa8cf25875527fe5572e50f33ce343f 8802320 sgx-aesm-service_2.15.101.1.orig.tar.gz
+ 40bbac3795a283ba13e4195ffae38ecf2a25e2d1 21528 sgx-aesm-service_2.15.101.1-bionic1.debian.tar.xz
+ b57604e31c8e89772b6815986c477bc1678a9c4f 297228 libsgx-ae-epid_2.15.101.1-bionic1_amd64.deb
+ e4c02f6f38e3e43dc898df5bab3c8ad34a09233c 131296 libsgx-ae-le_2.15.101.1-bionic1_amd64.deb
+ 610ed94c002fa2f8fc3aa5acd5dac9a2568f73b9 220656 libsgx-ae-pce_2.15.101.1-bionic1_amd64.deb
+ bbde801a58dcb773bb25fff6147d58dbe0e11e92 5236 libsgx-aesm-ecdsa-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ e649fb5128e5684fae9263bbbbb33c4a1098c86c 32096 libsgx-aesm-ecdsa-plugin_2.15.101.1-bionic1_amd64.deb
+ 29575117b960b1be3c1c493f3e4253570f76b81d 9320 libsgx-aesm-epid-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 68629c8420d968a4c4f94fa3cb785b6d842c6fe7 58272 libsgx-aesm-epid-plugin_2.15.101.1-bionic1_amd64.deb
+ 8cb55edd4facb0a98e1f5e2d1e877933e65571a2 6176 libsgx-aesm-launch-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 1dc200055e65eb4279c0ffa0274933b5500efca9 38216 libsgx-aesm-launch-plugin_2.15.101.1-bionic1_amd64.deb
+ 209306c24e4a0902528560748c4b41015135a3c7 4576 libsgx-aesm-pce-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 1ea7d7acb778bb5dec73c56f33f12aa3e69da249 28896 libsgx-aesm-pce-plugin_2.15.101.1-bionic1_amd64.deb
+ fc6a226cf2d442a06fb641815583fa8915816eab 5876 libsgx-aesm-quote-ex-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 542234632abf01448788953b60ef319bb9d824c6 40588 libsgx-aesm-quote-ex-plugin_2.15.101.1-bionic1_amd64.deb
+ 72279261e1277d6f3bfe2a1d784f99cf9fb568b1 6765752 sgx-aesm-service-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ a83cd1de89a623ba2ef44efe89d59ff78fb6d209 10383 sgx-aesm-service_2.15.101.1-bionic1_amd64.buildinfo
+ c12a81b1b1554cb571ed70ffa5ca97c5d292792d 532384 sgx-aesm-service_2.15.101.1-bionic1_amd64.deb
+Checksums-Sha256:
+ f47aad5d279d0ea66e05b358967dc62d74d9f4dd27c2629c1305198ced6ef780 1553 sgx-aesm-service_2.15.101.1-bionic1.dsc
+ 7b7616682360d8a8727ba498fa5078eec5073de34775ce6aa6beb03f5d0ec343 8802320 sgx-aesm-service_2.15.101.1.orig.tar.gz
+ 63b6cdf0adca759a1809d61a394a2788bf0d00e7b53bba870f071090f8042dd9 21528 sgx-aesm-service_2.15.101.1-bionic1.debian.tar.xz
+ 97d4f09635d42942bca52246d63cdd9e6ddc281278c994a6df4fe3af3d808658 297228 libsgx-ae-epid_2.15.101.1-bionic1_amd64.deb
+ 0806d7b5f2f88ddf0565bbcc43aa1b2d13833fe846458c42ad40f1f1c0925fad 131296 libsgx-ae-le_2.15.101.1-bionic1_amd64.deb
+ f656d6c03e1f0b9443df25f9767a954cc0df53eff8a6f7d02257a6b2cd046693 220656 libsgx-ae-pce_2.15.101.1-bionic1_amd64.deb
+ a4d161b66e9ee4f59b6e4a7230d1d864096d6dd5acdce7fd426462f04e0e0b3a 5236 libsgx-aesm-ecdsa-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ dacbafe72a9768dab24ecc42fe7f301c47ca0ca65c19929d9e496a14818bdda2 32096 libsgx-aesm-ecdsa-plugin_2.15.101.1-bionic1_amd64.deb
+ 240466a5bec3d76a7252e3f25949f090909b28c71cbe33240ff5b39aed3243f2 9320 libsgx-aesm-epid-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 5a76580bbfa8b6107e3e082ad5d000e2e6bd0d7de0520a04417529bbc0b1358f 58272 libsgx-aesm-epid-plugin_2.15.101.1-bionic1_amd64.deb
+ 97b4a6f52894717aaf457849d5d24889f5af4bb0ed64faa20c85cbaddb74a810 6176 libsgx-aesm-launch-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ b99550fd061542bc6acc95cb43a553effe0a7d33b71a2a7f1c51f5051133f658 38216 libsgx-aesm-launch-plugin_2.15.101.1-bionic1_amd64.deb
+ a6cd58b51fda0bf1907306e5a21f925f473c0692de1f3886400100477153336e 4576 libsgx-aesm-pce-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 8a640d569c380a3557823c3018c2e76df8d8b77175d639b09fecc184c2992f1e 28896 libsgx-aesm-pce-plugin_2.15.101.1-bionic1_amd64.deb
+ 9bdc139dabea5f4d9ebb8752eea660dfbee825226a2df37897c4577e03fa5f00 5876 libsgx-aesm-quote-ex-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ e737eb01d36b0273e238dd042352c06aab138bddfce64f37cf2861a26a8f573b 40588 libsgx-aesm-quote-ex-plugin_2.15.101.1-bionic1_amd64.deb
+ b8a867bb20464f956936d75cc7d8f9618ce102fcd48ce5914c238e36ca8d14a1 6765752 sgx-aesm-service-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 137c3552f06ad230308100d865c7b5c00cc8b6d28243cf372577e5c3e5e75fa3 10383 sgx-aesm-service_2.15.101.1-bionic1_amd64.buildinfo
+ 9a9f25f5167f380dc6045e3b1043b2e60f8c1ae6456f2da347882df63d321f7c 532384 sgx-aesm-service_2.15.101.1-bionic1_amd64.deb
+Files:
+ c1f6c9310ce2591d13d9d9652da26c01 1553 utils optional sgx-aesm-service_2.15.101.1-bionic1.dsc
+ a652fc3e9e8e19584dcb9e4b2eb3b4a8 8802320 utils optional sgx-aesm-service_2.15.101.1.orig.tar.gz
+ a775abc111b37245d69e0d96a545a928 21528 utils optional sgx-aesm-service_2.15.101.1-bionic1.debian.tar.xz
+ de986ce4cab03f3f67038ae13e4b19fe 297228 utils optional libsgx-ae-epid_2.15.101.1-bionic1_amd64.deb
+ 529344b6d4aa53972f27fffdcf9657d1 131296 utils optional libsgx-ae-le_2.15.101.1-bionic1_amd64.deb
+ 324cc58de9bb2343ffc2d3e6aeeb167e 220656 utils optional libsgx-ae-pce_2.15.101.1-bionic1_amd64.deb
+ c4303958c3b94015523d4ac95df19664 5236 debug optional libsgx-aesm-ecdsa-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 4c1f0c363610761963c957f43470bbd6 32096 utils optional libsgx-aesm-ecdsa-plugin_2.15.101.1-bionic1_amd64.deb
+ 5080d0d2805d582fdc0ee96f61f8d8ff 9320 debug optional libsgx-aesm-epid-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 4d24d0b01edc6069c40b5980fb6b3c6c 58272 utils optional libsgx-aesm-epid-plugin_2.15.101.1-bionic1_amd64.deb
+ 9f99cd0b7413c541812342808126e553 6176 debug optional libsgx-aesm-launch-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ bddfcf62093a20fe1b45df143935bee9 38216 utils optional libsgx-aesm-launch-plugin_2.15.101.1-bionic1_amd64.deb
+ f748e7740fd6d0a516d51a1f6bc704a4 4576 debug optional libsgx-aesm-pce-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 4a33098e665a3dc7c6f3b896ed3dea4a 28896 utils optional libsgx-aesm-pce-plugin_2.15.101.1-bionic1_amd64.deb
+ accc06b73c8316e003f6c44a1cbebd1f 5876 debug optional libsgx-aesm-quote-ex-plugin-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 0ec33b15757188a14bebbf6c82a7e444 40588 utils optional libsgx-aesm-quote-ex-plugin_2.15.101.1-bionic1_amd64.deb
+ 92f03177a1883cc5ab05cd4ba6730033 6765752 debug optional sgx-aesm-service-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 8d11c7f501c674250cb58f85542edaee 10383 utils optional sgx-aesm-service_2.15.101.1-bionic1_amd64.buildinfo
+ 260670a2c928d8cc9db6663c836d89bc 532384 utils optional sgx-aesm-service_2.15.101.1-bionic1_amd64.deb

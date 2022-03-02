@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Mon, 29 Jul 2019 15:23:51 +0800
+Source: libsgx-launch
+Binary: libsgx-launch libsgx-launch-dev
+Architecture: source amd64
+Version: 2.15.101.1-bionic1
+Distribution: unstable
+Urgency: low
+Maintainer: <xiangquan.liu@intel.com>
+Changed-By: Xiangquan Liu <xiangquan.liu@intel.com>
+Description:
+ libsgx-launch - Intel(R) Software Guard Extensions Launch Service
+ libsgx-launch-dev - Intel(R) Software Guard Extensions Launch Service for Developers
+Changes:
+ libsgx-launch (2.15.101.1-bionic1) unstable; urgency=low
+ .
+   * Initial Release
+Checksums-Sha1:
+ e24b42c1bf7eee65f2fc358d1afe6b76ad663ec0 998 libsgx-launch_2.15.101.1-bionic1.dsc
+ fdea59285187734fc7f8a7abff34452d097b8767 124994 libsgx-launch_2.15.101.1.orig.tar.gz
+ 4954be3362a370e06b0b68b31d4a542d1cc29a3c 20408 libsgx-launch_2.15.101.1-bionic1.debian.tar.xz
+ a9865de9ee754a959da7ed1943bea38cfc2d8ad0 23280 libsgx-launch-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ af4be7e8c0955a796fc5706c9fb61609a82a732f 21408 libsgx-launch-dev_2.15.101.1-bionic1_amd64.deb
+ 6ff0b9061dbbd8b487768169d891da0c72ffcd58 6282 libsgx-launch_2.15.101.1-bionic1_amd64.buildinfo
+ 66057aa7f59429b829e7a806dddadb1842a27809 72296 libsgx-launch_2.15.101.1-bionic1_amd64.deb
+Checksums-Sha256:
+ 7d0c88ff2589dce6936e13135741fdbead0a69c4f4052e9ac4f26e325ee48cff 998 libsgx-launch_2.15.101.1-bionic1.dsc
+ 8157ce40875329e9049266a0bfd263fead8caf8a551e1e57ec7f2699b5482fe1 124994 libsgx-launch_2.15.101.1.orig.tar.gz
+ cd87953e18834ba29b5ee90dddb6e8e3f73dab048e3933c7ab1f831ec75eeeda 20408 libsgx-launch_2.15.101.1-bionic1.debian.tar.xz
+ 19ec5cf8450b32c011a2954fcb339de4559280a266a1059bf405ad255b09ef3d 23280 libsgx-launch-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ 848119c3715909caca76d57edffe754219c389e4f7c95f0648951319755e39e0 21408 libsgx-launch-dev_2.15.101.1-bionic1_amd64.deb
+ 8a7245865e16657fafc6a0a4d941539b71d9e188dc725eb789d6e38280888e75 6282 libsgx-launch_2.15.101.1-bionic1_amd64.buildinfo
+ c9044d88a3dffed9e72edf5db7b1769e6716d930fd87e8b7d2c7ace3629f6082 72296 libsgx-launch_2.15.101.1-bionic1_amd64.deb
+Files:
+ c3f66234ce3881a4ed90564d03661fab 998 libs optional libsgx-launch_2.15.101.1-bionic1.dsc
+ 3028635bc643c5386a34451a30d987e0 124994 libs optional libsgx-launch_2.15.101.1.orig.tar.gz
+ f11d47f7f7b5a064b98c67f77b531162 20408 libs optional libsgx-launch_2.15.101.1-bionic1.debian.tar.xz
+ 9fa6cdb793e8c79b1a110eacff0262c1 23280 debug optional libsgx-launch-dbgsym_2.15.101.1-bionic1_amd64.ddeb
+ dcc593f986b37d03ce138adc31274424 21408 devel optional libsgx-launch-dev_2.15.101.1-bionic1_amd64.deb
+ b431edd240161d3506372483d8fdfd65 6282 libs optional libsgx-launch_2.15.101.1-bionic1_amd64.buildinfo
+ b5d8378da56d69f387558040164333be 72296 libs optional libsgx-launch_2.15.101.1-bionic1_amd64.deb

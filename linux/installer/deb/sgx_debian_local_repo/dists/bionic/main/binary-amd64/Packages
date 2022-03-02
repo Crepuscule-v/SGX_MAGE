@@ -1,0 +1,1009 @@
+Package: libsgx-ae-epid
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 1890
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: utils
+Filename: pool/main/s/sgx-aesm-service/libsgx-ae-epid_2.15.101.1-bionic1_amd64.deb
+Size: 297228
+SHA256: 97d4f09635d42942bca52246d63cdd9e6ddc281278c994a6df4fe3af3d808658
+SHA1: b57604e31c8e89772b6815986c477bc1678a9c4f
+MD5sum: de986ce4cab03f3f67038ae13e4b19fe
+Description: Intel(R) Software Guard Extensions QE and PvE
+
+Package: libsgx-ae-le
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 465
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: utils
+Filename: pool/main/s/sgx-aesm-service/libsgx-ae-le_2.15.101.1-bionic1_amd64.deb
+Size: 131296
+SHA256: 0806d7b5f2f88ddf0565bbcc43aa1b2d13833fe846458c42ad40f1f1c0925fad
+SHA1: e4c02f6f38e3e43dc898df5bab3c8ad34a09233c
+MD5sum: 529344b6d4aa53972f27fffdcf9657d1
+Description: Intel(R) Software Guard Extensions LE
+
+Package: libsgx-ae-pce
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 977
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: utils
+Filename: pool/main/s/sgx-aesm-service/libsgx-ae-pce_2.15.101.1-bionic1_amd64.deb
+Size: 220656
+SHA256: f656d6c03e1f0b9443df25f9767a954cc0df53eff8a6f7d02257a6b2cd046693
+SHA1: 610ed94c002fa2f8fc3aa5acd5dac9a2568f73b9
+MD5sum: 324cc58de9bb2343ffc2d3e6aeeb167e
+Description: Intel(R) Software Guard Extensions PCE
+
+Package: libsgx-ae-qe3
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 1306
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-ae-qe3/libsgx-ae-qe3_1.12.101.1-bionic1_amd64.deb
+Size: 223728
+SHA256: b0833f0f5ebe63c8757dee5f4ca58c87482ea24e273c802538dadc98132a4a1c
+SHA1: 371fc8e9381e701297295132a55c22f5e96ac98e
+MD5sum: eac76ace744e4f275478be33e57ea4ff
+Description: Intel(R) Software Guard Extensions QE3
+
+Package: libsgx-ae-qve
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 3351
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-ae-qve/libsgx-ae-qve_1.12.101.1-bionic1_amd64.deb
+Size: 1136300
+SHA256: 6a507223d590a3961d9b0b79962eba10b3a6f0f39de70649f42fb4fe355c7a22
+SHA1: 8e594fa313fcb7e28c7484b51925038a57b51800
+MD5sum: dfbed82dcb28ba1234d3a278fe3f4b8e
+Description: Intel(R) Software Guard Extensions QVE
+
+Package: libsgx-aesm-ecdsa-plugin
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 150
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), sgx-aesm-service (>= 2.15.101.1-bionic1), libsgx-qe3-logic (>= 1.12), libsgx-aesm-pce-plugin (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: utils
+Filename: pool/main/s/sgx-aesm-service/libsgx-aesm-ecdsa-plugin_2.15.101.1-bionic1_amd64.deb
+Size: 32096
+SHA256: dacbafe72a9768dab24ecc42fe7f301c47ca0ca65c19929d9e496a14818bdda2
+SHA1: e649fb5128e5684fae9263bbbbb33c4a1098c86c
+MD5sum: 4c1f0c363610761963c957f43470bbd6
+Description: ECDSA Quote Plugin for Intel(R) Software Guard Extensions AESM Service
+
+Package: libsgx-aesm-ecdsa-plugin-dbgsym
+Package-Type: ddeb
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 29
+Depends: libsgx-aesm-ecdsa-plugin (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/s/sgx-aesm-service/libsgx-aesm-ecdsa-plugin-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 5236
+SHA256: a4d161b66e9ee4f59b6e4a7230d1d864096d6dd5acdce7fd426462f04e0e0b3a
+SHA1: bbde801a58dcb773bb25fff6147d58dbe0e11e92
+MD5sum: c4303958c3b94015523d4ac95df19664
+Description: debug symbols for libsgx-aesm-ecdsa-plugin
+Build-Ids: 4680d4fe3548488e2249168b12abaeb0e6a465ad
+
+Package: libsgx-aesm-epid-plugin
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 221
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), sgx-aesm-service (>= 2.15.101.1-bionic1), libsgx-ae-epid (>= 2.15.101.1-bionic1), libsgx-aesm-pce-plugin (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: utils
+Filename: pool/main/s/sgx-aesm-service/libsgx-aesm-epid-plugin_2.15.101.1-bionic1_amd64.deb
+Size: 58272
+SHA256: 5a76580bbfa8b6107e3e082ad5d000e2e6bd0d7de0520a04417529bbc0b1358f
+SHA1: 68629c8420d968a4c4f94fa3cb785b6d842c6fe7
+MD5sum: 4d24d0b01edc6069c40b5980fb6b3c6c
+Description: EPID Quote Plugin for Intel(R) Software Guard Extensions AESM Service
+
+Package: libsgx-aesm-epid-plugin-dbgsym
+Package-Type: ddeb
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 47
+Depends: libsgx-aesm-epid-plugin (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/s/sgx-aesm-service/libsgx-aesm-epid-plugin-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 9320
+SHA256: 240466a5bec3d76a7252e3f25949f090909b28c71cbe33240ff5b39aed3243f2
+SHA1: 29575117b960b1be3c1c493f3e4253570f76b81d
+MD5sum: 5080d0d2805d582fdc0ee96f61f8d8ff
+Description: debug symbols for libsgx-aesm-epid-plugin
+Build-Ids: ae818ba967f02ebe122265f68194be00e4a5a0b2
+
+Package: libsgx-aesm-launch-plugin
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 163
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), sgx-aesm-service (>= 2.15.101.1-bionic1), libsgx-ae-le (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: utils
+Filename: pool/main/s/sgx-aesm-service/libsgx-aesm-launch-plugin_2.15.101.1-bionic1_amd64.deb
+Size: 38216
+SHA256: b99550fd061542bc6acc95cb43a553effe0a7d33b71a2a7f1c51f5051133f658
+SHA1: 1dc200055e65eb4279c0ffa0274933b5500efca9
+MD5sum: bddfcf62093a20fe1b45df143935bee9
+Description: Launch Plugin for Intel(R) Software Guard Extensions AESM Service
+
+Package: libsgx-aesm-launch-plugin-dbgsym
+Package-Type: ddeb
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 33
+Depends: libsgx-aesm-launch-plugin (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/s/sgx-aesm-service/libsgx-aesm-launch-plugin-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 6176
+SHA256: 97b4a6f52894717aaf457849d5d24889f5af4bb0ed64faa20c85cbaddb74a810
+SHA1: 8cb55edd4facb0a98e1f5e2d1e877933e65571a2
+MD5sum: 9f99cd0b7413c541812342808126e553
+Description: debug symbols for libsgx-aesm-launch-plugin
+Build-Ids: b561363895b230a38db895ebeeb29607403246ab
+
+Package: libsgx-aesm-pce-plugin
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 134
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), sgx-aesm-service (>= 2.15.101.1-bionic1), libsgx-pce-logic (>= 1.12), libsgx-ae-pce (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: utils
+Filename: pool/main/s/sgx-aesm-service/libsgx-aesm-pce-plugin_2.15.101.1-bionic1_amd64.deb
+Size: 28896
+SHA256: 8a640d569c380a3557823c3018c2e76df8d8b77175d639b09fecc184c2992f1e
+SHA1: 1ea7d7acb778bb5dec73c56f33f12aa3e69da249
+MD5sum: 4a33098e665a3dc7c6f3b896ed3dea4a
+Description: PCE Plugin for Intel(R) Software Guard Extensions AESM Service
+
+Package: libsgx-aesm-pce-plugin-dbgsym
+Package-Type: ddeb
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 26
+Depends: libsgx-aesm-pce-plugin (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/s/sgx-aesm-service/libsgx-aesm-pce-plugin-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 4576
+SHA256: a6cd58b51fda0bf1907306e5a21f925f473c0692de1f3886400100477153336e
+SHA1: 209306c24e4a0902528560748c4b41015135a3c7
+MD5sum: f748e7740fd6d0a516d51a1f6bc704a4
+Description: debug symbols for libsgx-aesm-pce-plugin
+Build-Ids: 41bc74861422b168cec4259f9682dbfed3ac868a
+
+Package: libsgx-aesm-quote-ex-plugin
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 169
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), sgx-aesm-service (>= 2.15.101.1-bionic1), libsgx-aesm-ecdsa-plugin (>= 2.15.101.1-bionic1)
+Recommends: libsgx-aesm-epid-plugin (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: utils
+Filename: pool/main/s/sgx-aesm-service/libsgx-aesm-quote-ex-plugin_2.15.101.1-bionic1_amd64.deb
+Size: 40588
+SHA256: e737eb01d36b0273e238dd042352c06aab138bddfce64f37cf2861a26a8f573b
+SHA1: 542234632abf01448788953b60ef319bb9d824c6
+MD5sum: 0ec33b15757188a14bebbf6c82a7e444
+Description: Unified Quote Plugin for Intel(R) Software Guard Extensions AESM Service
+
+Package: libsgx-aesm-quote-ex-plugin-dbgsym
+Package-Type: ddeb
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 33
+Depends: libsgx-aesm-quote-ex-plugin (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/s/sgx-aesm-service/libsgx-aesm-quote-ex-plugin-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 5876
+SHA256: 9bdc139dabea5f4d9ebb8752eea660dfbee825226a2df37897c4577e03fa5f00
+SHA1: fc6a226cf2d442a06fb641815583fa8915816eab
+MD5sum: accc06b73c8316e003f6c44a1cbebd1f
+Description: debug symbols for libsgx-aesm-quote-ex-plugin
+Build-Ids: bcc6acbdcaf7de350ca92ab3c1b2bbf1c0045b6a
+
+Package: libsgx-dcap-default-qpl
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 2613
+Depends: libc6 (>= 2.25), libcurl4 (>= 7.16.2), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-dcap-default-qpl/libsgx-dcap-default-qpl_1.12.101.1-bionic1_amd64.deb
+Size: 995696
+SHA256: 197ff3f5f7edf37eef42b8b30fe4cf071a9be6a91bd69c4e993f7a1aa2338abf
+SHA1: 27a595542323281142b6fa77ac31b79e65dde27b
+MD5sum: 75a026dafe457086d76e825d2edd1624
+Description: Intel(R) Software Guard Extensions Default Quote Provider Library
+
+Package: libsgx-dcap-default-qpl-dbgsym
+Package-Type: ddeb
+Source: libsgx-dcap-default-qpl
+Version: 1.12.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 537
+Depends: libsgx-dcap-default-qpl (= 1.12.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-dcap-default-qpl/libsgx-dcap-default-qpl-dbgsym_1.12.101.1-bionic1_amd64.deb
+Size: 296100
+SHA256: 8b9047f6f73a2c94bae1148542fa306db10f32ba308572776467e50f9471c5c5
+SHA1: 71b99699df8ea1e9b51543f98208496f95f8ca9a
+MD5sum: c3f8a9477317f43fa9e5fbc3d9f92b12
+Description: debug symbols for libsgx-dcap-default-qpl
+Build-Ids: 0d6746873f217d5265a7b6db29a1ed545e7aa606 ae8ba748baeba582826a0d2ae2a92504718b54ec
+
+Package: libsgx-dcap-default-qpl-dev
+Source: libsgx-dcap-default-qpl
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 15
+Depends: libsgx-dcap-default-qpl (= 1.12.101.1-bionic1)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: devel
+Filename: pool/main/libs/libsgx-dcap-default-qpl/libsgx-dcap-default-qpl-dev_1.12.101.1-bionic1_amd64.deb
+Size: 2768
+SHA256: d12546f7ea9c6fa2dc13763aa3c585c8ec5718117321580720fb87e1f15bc4be
+SHA1: f25c93f350cfbc674a774c213fb72f15d9a31fb0
+MD5sum: a3047cab53b9dc5972890b0508c52c4a
+Description: Intel(R) Software Guard Extensions Default Quote Provider Library For Developers
+
+Package: libsgx-dcap-ql
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 30
+Depends: libsgx-qe3-logic (>= 1.12.101.1-bionic1), libsgx-pce-logic (>= 1.12.101.1-bionic1), libsgx-ae-qve (>= 1.12.101.1-bionic1), libc6 (>= 2.4)
+Recommends: libsgx-dcap-quote-verify (>= 1.12.101.1-bionic1), libsgx-quote-ex (>= 2.15)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-dcap-ql/libsgx-dcap-ql_1.12.101.1-bionic1_amd64.deb
+Size: 6092
+SHA256: 94da137e835bccf8dfb48a435e76a9a06401a458a70497aee53c01c6a5dd02d7
+SHA1: e8c4b051817bfae5723e3cb4dda036411ea0412a
+MD5sum: d910a3478236aa0bf7902b42528edae2
+Description: Intel(R) Software Guard Extensions Data Center Attestation Primitives
+
+Package: libsgx-dcap-ql-dbgsym
+Package-Type: ddeb
+Source: libsgx-dcap-ql
+Version: 1.12.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 33
+Depends: libsgx-dcap-ql (= 1.12.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-dcap-ql/libsgx-dcap-ql-dbgsym_1.12.101.1-bionic1_amd64.deb
+Size: 18748
+SHA256: 57e1fc2e3f9ae288d3851573de5259a0d2916307604b6f1fe4de053e6e501c59
+SHA1: a2bff852aac455a6ce30051080058a2aa4cb8ce5
+MD5sum: ba44acd7129c0fb05f501a05993b06f6
+Description: debug symbols for libsgx-dcap-ql
+Build-Ids: 1dab65e1678a3bb61ac3301a28673d36294192bb
+
+Package: libsgx-dcap-ql-dev
+Source: libsgx-dcap-ql
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 18
+Depends: libsgx-dcap-ql (= 1.12.101.1-bionic1), libsgx-headers (>= 2.15)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: devel
+Filename: pool/main/libs/libsgx-dcap-ql/libsgx-dcap-ql-dev_1.12.101.1-bionic1_amd64.deb
+Size: 3468
+SHA256: 870a1dfaf03f4ece12b4f9fea064ac8408976944972a02b34a9cdd85cc35bc54
+SHA1: fff8f5cab0aa375579507afab0ba41683900592b
+MD5sum: acfe47fa51925ca31cb47ea9c50835a4
+Description: Intel(R) Software Guard Extensions Data Center Attestation Primitives For Developers
+
+Package: libsgx-dcap-quote-verify
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <hongyan.jiang@intel.com>
+Installed-Size: 2982
+Depends: libc6 (>= 2.25), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Recommends: libsgx-ae-qve (>= 1.12.101.1-bionic1), libsgx-urts (>= 1.12.101.1-bionic1)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-dcap-quote-verify/libsgx-dcap-quote-verify_1.12.101.1-bionic1_amd64.deb
+Size: 1125232
+SHA256: a91151996019062e0537fd8b293ae247921f448e3bf32ffef36227b89d38b89f
+SHA1: a061b364000ebc8921ba3cf3a25673940a6f4145
+MD5sum: b71f545ed03af23c48c68a9b7a2d6145
+Description: Intel(R) Software Guard Extensions Data Center Attestation Primitives
+
+Package: libsgx-dcap-quote-verify-dbgsym
+Package-Type: ddeb
+Source: libsgx-dcap-quote-verify
+Version: 1.12.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <hongyan.jiang@intel.com>
+Installed-Size: 437
+Depends: libsgx-dcap-quote-verify (= 1.12.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-dcap-quote-verify/libsgx-dcap-quote-verify-dbgsym_1.12.101.1-bionic1_amd64.deb
+Size: 99400
+SHA256: 53e3cc2da8e750a89507ff54e7b9973d8e60692de20b0adeb900861c25947294
+SHA1: 93822c4597080b898e5de3d679feafab65a95433
+MD5sum: becf89303734da1e2af80731491aa2a7
+Description: debug symbols for libsgx-dcap-quote-verify
+Build-Ids: 3fdbddf665fd90c5c1038628a893e8129e7f8ad4
+
+Package: libsgx-dcap-quote-verify-dev
+Source: libsgx-dcap-quote-verify
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <hongyan.jiang@intel.com>
+Installed-Size: 31
+Depends: libsgx-dcap-quote-verify (= 1.12.101.1-bionic1), libsgx-headers (>= 2.15)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: devel
+Filename: pool/main/libs/libsgx-dcap-quote-verify/libsgx-dcap-quote-verify-dev_1.12.101.1-bionic1_amd64.deb
+Size: 6168
+SHA256: 6d08ab4ce18a399a19404d62da44149cac336b1d553dc94eaeaf72aa5b94ef8a
+SHA1: 42bb20f2f6c26ae71986ecada8d5f1950bb6fa7a
+MD5sum: f3a4ed5aaf6ca823901b63b252643c07
+Description: Intel(R) Software Guard Extensions Data Center Attestation Primitives For Developers
+
+Package: libsgx-enclave-common
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 150
+Depends: libc6 (>= 2.16), libgcc1 (>= 1:3.0), libstdc++6 (>= 5)
+Recommends: libsgx-launch (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-enclave-common/libsgx-enclave-common_2.15.101.1-bionic1_amd64.deb
+Size: 32208
+SHA256: 04d3467688fcc04145c84dba38af355d7526a1393d6d51db48f7e311ac4fdd0c
+SHA1: e9f26865fba7e3b6d3aef7421a0d3fbd192a0ea4
+MD5sum: 486910b7fca03fd974a572d0fa31ebfc
+Description: Intel(R) Software Guard Extensions Enclave Common Loader
+
+Package: libsgx-enclave-common-dbgsym
+Package-Type: ddeb
+Source: libsgx-enclave-common
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 23
+Depends: libsgx-enclave-common (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-enclave-common/libsgx-enclave-common-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 3828
+SHA256: 4268d90270c3cede429e19403c68a8ad66b4239ea436e0bc62713e5ae59747dd
+SHA1: 14691af174efc9cafac7f70c82f8a0954280449d
+MD5sum: c4c739d60f14e5c18ef9ecb4d59aee72
+Description: debug symbols for libsgx-enclave-common
+Build-Ids: 3287cd4e63ee029fea2985cd93bca77a61856407
+
+Package: libsgx-enclave-common-dev
+Source: libsgx-enclave-common
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 118
+Depends: libsgx-enclave-common (= 2.15.101.1-bionic1), libsgx-headers (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: devel
+Filename: pool/main/libs/libsgx-enclave-common/libsgx-enclave-common-dev_2.15.101.1-bionic1_amd64.deb
+Size: 23452
+SHA256: 0d9c2394e9f948b9f3f41cec36af229c6167bff3fe594cdd86b1dbac8471c499
+SHA1: 14e4e484d2bcc1adffa352c441002eee2dc6146b
+MD5sum: 5fd6f8eda82e3f18b94101e2c85975cb
+Description: Intel(R) Software Guard Extensions Enclave Common Loader for Developers
+
+Package: libsgx-epid
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 380
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libprotobuf10, libstdc++6 (>= 5.2)
+Recommends: libsgx-aesm-epid-plugin (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-epid/libsgx-epid_2.15.101.1-bionic1_amd64.deb
+Size: 73704
+SHA256: 78f493c3109daf7cbea37bff038467e91568884d501a2df8f506be8512bd586a
+SHA1: 9a1d2efcc4cfcbee2c94f39befb231ad1de1a677
+MD5sum: 896d891ce2952c136ca568da6f688d49
+Description: Intel(R) Software Guard Extensions EPID Quote Service
+
+Package: libsgx-epid-dbgsym
+Package-Type: ddeb
+Source: libsgx-epid
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 196
+Depends: libsgx-epid (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-epid/libsgx-epid-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 23412
+SHA256: 76bcac55a30aeddf8003f493bc1dba3b404058bfa1367e8fa2e3974b905b0757
+SHA1: d1b5134550155a22187b6afaa3266c4658b4702b
+MD5sum: 12eaec1ac5ba690f16f89b5d8a9a16f8
+Description: debug symbols for libsgx-epid
+Build-Ids: 5fd81f24b450763b79ea55bfe26d53d016cbe5b8
+
+Package: libsgx-epid-dev
+Source: libsgx-epid
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 111
+Depends: libsgx-epid (= 2.15.101.1-bionic1), libsgx-headers (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: devel
+Filename: pool/main/libs/libsgx-epid/libsgx-epid-dev_2.15.101.1-bionic1_amd64.deb
+Size: 22480
+SHA256: c5c4e11f4ec6e1fd6e430b3306c8efefc343fd5686ff85a4295d28646cac4954
+SHA1: 15a6f11fa7ef553e92a6651118c040eab23bd6a7
+MD5sum: 8a3f70e7acb5c2ee2b056ef0914cf12f
+Description: Intel(R) Software Guard Extensions EPID Quote Service for Developers
+
+Package: libsgx-headers
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 178
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: devel
+Filename: pool/main/libs/libsgx-headers/libsgx-headers_2.15.101.1-bionic1_amd64.deb
+Size: 32944
+SHA256: a63af4f2dc9ba3a10bb2d88d3c85a0a3ddb2243f4abe72b022b6cf39798b09b8
+SHA1: 46bfaa8ca831c4b4b7e1fc9d2801d3819d20a80c
+MD5sum: aafe1c5fb4672bd15811e7703011a12a
+Description: Intel(R) Software Guard Extensions Basic Headers for Developers
+
+Package: libsgx-launch
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 376
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libprotobuf10, libstdc++6 (>= 5.2)
+Recommends: libsgx-aesm-launch-plugin (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-launch/libsgx-launch_2.15.101.1-bionic1_amd64.deb
+Size: 72296
+SHA256: c9044d88a3dffed9e72edf5db7b1769e6716d930fd87e8b7d2c7ace3629f6082
+SHA1: 66057aa7f59429b829e7a806dddadb1842a27809
+MD5sum: b5d8378da56d69f387558040164333be
+Description: Intel(R) Software Guard Extensions Launch Service
+
+Package: libsgx-launch-dbgsym
+Package-Type: ddeb
+Source: libsgx-launch
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 195
+Depends: libsgx-launch (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-launch/libsgx-launch-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 23280
+SHA256: 19ec5cf8450b32c011a2954fcb339de4559280a266a1059bf405ad255b09ef3d
+SHA1: a9865de9ee754a959da7ed1943bea38cfc2d8ad0
+MD5sum: 9fa6cdb793e8c79b1a110eacff0262c1
+Description: debug symbols for libsgx-launch
+Build-Ids: a5bb6bd14a42a5b62c3c5db959109469a105b602
+
+Package: libsgx-launch-dev
+Source: libsgx-launch
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 107
+Depends: libsgx-launch (= 2.15.101.1-bionic1), libsgx-headers (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: devel
+Filename: pool/main/libs/libsgx-launch/libsgx-launch-dev_2.15.101.1-bionic1_amd64.deb
+Size: 21408
+SHA256: 848119c3715909caca76d57edffe754219c389e4f7c95f0648951319755e39e0
+SHA1: af4be7e8c0955a796fc5706c9fb61609a82a732f
+MD5sum: dcc593f986b37d03ce138adc31274424
+Description: Intel(R) Software Guard Extensions Launch Service for Developers
+
+Package: libsgx-pce-logic
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 32
+Depends: libsgx-urts (>= 2.15), libsgx-ae-pce (>= 2.15), libc6 (>= 2.4), libstdc++6 (>= 4.1.1)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-pce-logic/libsgx-pce-logic_1.12.101.1-bionic1_amd64.deb
+Size: 7972
+SHA256: 220844c003676a7431bcde8f85f47ad4a29301956acf6b5a879734e4e3dc246d
+SHA1: fa241b3cbdd20bf6a63418155445a47624fea4fc
+MD5sum: fc80ee37b37723558e95895afb0e307b
+Description: Intel(R) Software Guard Extensions Data Center Attestation Primitives
+
+Package: libsgx-pce-logic-dbgsym
+Package-Type: ddeb
+Source: libsgx-pce-logic
+Version: 1.12.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 39
+Depends: libsgx-pce-logic (= 1.12.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-pce-logic/libsgx-pce-logic-dbgsym_1.12.101.1-bionic1_amd64.deb
+Size: 24320
+SHA256: ba0f994bbbfaab202b12a20244a2a13762f1bdaaf3c083cdbc3775d94a074240
+SHA1: 62872acb98246873d459734a7a7c84e146324ea8
+MD5sum: 80d52d2638675982d09e9035d36ef110
+Description: debug symbols for libsgx-pce-logic
+Build-Ids: 8a6559b18c0e0b488fef73315cdd8749ed3f89a9
+
+Package: libsgx-qe3-logic
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 49
+Depends: libsgx-urts (>= 2.15), libsgx-ae-qe3 (>= 1.12.101.1-bionic1), libc6 (>= 2.14), libstdc++6 (>= 4.1.1)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-qe3-logic/libsgx-qe3-logic_1.12.101.1-bionic1_amd64.deb
+Size: 12476
+SHA256: 95fcf2db2ceb12659b53854be938f924d282e5cf4d9ff7a4f56bb8dba2be6029
+SHA1: 4b2705bb6dd5a84edb46d4651ae36450b56c0f2f
+MD5sum: 1522a0161c62866cd4837f3d10374198
+Description: Intel(R) Software Guard Extensions Data Center Attestation Primitives
+
+Package: libsgx-qe3-logic-dbgsym
+Package-Type: ddeb
+Source: libsgx-qe3-logic
+Version: 1.12.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 59
+Depends: libsgx-qe3-logic (= 1.12.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-qe3-logic/libsgx-qe3-logic-dbgsym_1.12.101.1-bionic1_amd64.deb
+Size: 42232
+SHA256: 9e0c3664310a6ff9bd6904a4035377decd11545ae787ece208564af13c2d68aa
+SHA1: 0ce0253f9e70c8f50518359a9dfb7facfa75a129
+MD5sum: 5605f2460c2650f0d1abddb4a30e27c8
+Description: debug symbols for libsgx-qe3-logic
+Build-Ids: 8fd8eaa6d0a0fbb1162e0424ff629529d625913e
+
+Package: libsgx-quote-ex
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 380
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libprotobuf10, libstdc++6 (>= 5.2)
+Recommends: libsgx-aesm-quote-ex-plugin (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-quote-ex/libsgx-quote-ex_2.15.101.1-bionic1_amd64.deb
+Size: 73620
+SHA256: 00632d17f0870d979512db96c716438f1def07208c5333a61d3696877b266ff9
+SHA1: e435894b18880d61e39762cac69f767e2bf2529f
+MD5sum: fb3341559920171088aa7d8af9b5ef09
+Description: Intel(R) Software Guard Extensions Unified Quote Service
+
+Package: libsgx-quote-ex-dbgsym
+Package-Type: ddeb
+Source: libsgx-quote-ex
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 196
+Depends: libsgx-quote-ex (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-quote-ex/libsgx-quote-ex-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 23432
+SHA256: 46cf6a2f196dbbd36029fe32d98d6afe617dd7b2f47c8681a49c771ebff22bb1
+SHA1: d3d5f556f01054842110b50340d363165502d3b3
+MD5sum: a5e3736af3bfdf20edd260a53ab8f8a1
+Description: debug symbols for libsgx-quote-ex
+Build-Ids: b47e4ec97099279e0299bcd3841bb312c8287d5c
+
+Package: libsgx-quote-ex-dev
+Source: libsgx-quote-ex
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 120
+Depends: libsgx-quote-ex (= 2.15.101.1-bionic1), libsgx-headers (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: devel
+Filename: pool/main/libs/libsgx-quote-ex/libsgx-quote-ex-dev_2.15.101.1-bionic1_amd64.deb
+Size: 24192
+SHA256: 7760844de707ba73eecff64ad3da20fbaa8d1905035fddf53e6c31b754df1dbc
+SHA1: 25f11bbd6be2720527276086d7f68fb6dfea9f13
+MD5sum: 309ef63b259686b68e54f2994728b5ef
+Description: Intel(R) Software Guard Extensions Unified Quote Service for Developers
+
+Package: libsgx-ra-network
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <junli.sun@intel.com>
+Installed-Size: 55
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-ra-network/libsgx-ra-network_1.12.101.1-bionic1_amd64.deb
+Size: 13776
+SHA256: 86eafa51edb37cc5dee8079046639d0c28356135129d2d98c6a5cbf1003bebae
+SHA1: a9eb157d166c04c8aa9a605e255ded8bd194d101
+MD5sum: e74665b9bfbed4c450975946807c9d75
+Description: Intel(R) Software Guard Extensions Registration Agent network library
+
+Package: libsgx-ra-network-dbgsym
+Package-Type: ddeb
+Source: libsgx-ra-network
+Version: 1.12.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <junli.sun@intel.com>
+Installed-Size: 20
+Depends: libsgx-ra-network (= 1.12.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-ra-network/libsgx-ra-network-dbgsym_1.12.101.1-bionic1_amd64.deb
+Size: 3460
+SHA256: 05fd66f44889476446493de0dcd2efd65f4d642c2a79ea9f595f55508d52aae8
+SHA1: 55ed7cbf43f03867280fa7ff7a3c172698e9b496
+MD5sum: 24c9652b4fbcd5da394501765099e00c
+Description: debug symbols for libsgx-ra-network
+Build-Ids: 08def6763c62f31920f5519690e55156278efaae
+
+Package: libsgx-ra-network-dev
+Source: libsgx-ra-network
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <junli.sun@intel.com>
+Installed-Size: 31
+Depends: libsgx-ra-network (= 1.12.101.1-bionic1)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: devel
+Filename: pool/main/libs/libsgx-ra-network/libsgx-ra-network-dev_1.12.101.1-bionic1_amd64.deb
+Size: 5220
+SHA256: eed74098acbd463ed8a9294a4bab3a0e246f9e69d2171d9ae92a78b03f32f925
+SHA1: f2d45256df5c6722d71d2937a823e7d922927f71
+MD5sum: 33f4dda8fa7cbdb51310d9f43b6d6c3a
+Description: Intel(R) Software Guard Extensions Registration Agent network library for Developer
+
+Package: libsgx-ra-uefi
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <junli.sun@intel.com>
+Installed-Size: 51
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-ra-uefi/libsgx-ra-uefi_1.12.101.1-bionic1_amd64.deb
+Size: 12044
+SHA256: 3bb20e4fa756555b691b935300baee6d95675d0221adfd0f99523c7474019855
+SHA1: c4b30839031700e186f13fc0200d2cd25e847f39
+MD5sum: a44b56df879e338c6bea2d34affe5415
+Description: Intel(R) Software Guard Extensions Registration Agent UEFI library
+
+Package: libsgx-ra-uefi-dbgsym
+Package-Type: ddeb
+Source: libsgx-ra-uefi
+Version: 1.12.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <junli.sun@intel.com>
+Installed-Size: 19
+Depends: libsgx-ra-uefi (= 1.12.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-ra-uefi/libsgx-ra-uefi-dbgsym_1.12.101.1-bionic1_amd64.deb
+Size: 3316
+SHA256: f9580a04b208d7afbfe42c817046721ea308d4836711e328ba4aa7660bceece8
+SHA1: 02669f71faf003fc75eeef48279a19fb9263e2dd
+MD5sum: 206beb4ed1640834feb48f47e22aa91d
+Description: debug symbols for libsgx-ra-uefi
+Build-Ids: c6ab77360422a1ff60662e8db5b4510f45bb9d0a
+
+Package: libsgx-ra-uefi-dev
+Source: libsgx-ra-uefi
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <junli.sun@intel.com>
+Installed-Size: 46
+Depends: libsgx-ra-uefi (= 1.12.101.1-bionic1)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: devel
+Filename: pool/main/libs/libsgx-ra-uefi/libsgx-ra-uefi-dev_1.12.101.1-bionic1_amd64.deb
+Size: 7876
+SHA256: 39c73a32dffcefa9d0126b4ce731353782c237a6f86e2db27fa2313f01a267e3
+SHA1: da38b4728ef2c0468e29c58819c7f800e3b871ce
+MD5sum: 84911400b0d5083c04c00e5cb78b9fa0
+Description: Intel(R) Software Guard Extensions Registration Agent UEFI library for Developer
+
+Package: libsgx-uae-service
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 122
+Depends: libc6 (>= 2.2.5), libstdc++6 (>= 5), libsgx-epid (>= 2.15.101.1-bionic1), libsgx-launch (>= 2.15.101.1-bionic1), libsgx-quote-ex (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-uae-service/libsgx-uae-service_2.15.101.1-bionic1_amd64.deb
+Size: 24880
+SHA256: 2efa013c2e537a9756ab8634c113419cfeea03b0abc9622d18feb995f26220e4
+SHA1: 1f1f6a782213b1b5782220d74fb6da000eb2b950
+MD5sum: 06539b9654218ead8fb7937e1b9a4e66
+Description: Intel(R) Software Guard Extensions Untrusted AE Service
+
+Package: libsgx-uae-service-dbgsym
+Package-Type: ddeb
+Source: libsgx-uae-service
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 19
+Depends: libsgx-uae-service (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-uae-service/libsgx-uae-service-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 3244
+SHA256: e4c77d4f9bd2ee35e7cb466d4000c4cc91ea391f804faeafc3dcd64d4d558b26
+SHA1: 18c37c370090a11a11302ffa05c34d49bef41d3c
+MD5sum: c97e153fdfd4a0e9e47677cbda8ad195
+Description: debug symbols for libsgx-uae-service
+Build-Ids: f0784097be5f7d41ca2b403aae43556340ed60ec
+
+Package: libsgx-urts
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 246
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libsgx-enclave-common (>= 2.15.101.1-bionic1)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libsgx-urts/libsgx-urts_2.15.101.1-bionic1_amd64.deb
+Size: 63644
+SHA256: 80505f970d22ecb5c74139c2dea341812e01cf9ccbfc42fafd9ceb02ad9c2d44
+SHA1: ce656074ebb6b242f13f9fdeafa54ece0405ea10
+MD5sum: 37c8deac524cff4fb33e2fa05c182bd7
+Description: Intel(R) Software Guard Extensions uRTS
+
+Package: libsgx-urts-dbgsym
+Package-Type: ddeb
+Source: libsgx-urts
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 57
+Depends: libsgx-urts (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/libs/libsgx-urts/libsgx-urts-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 11504
+SHA256: 1b727bcfef484768e807015d661f8b19ba7ecaeec94e7f6b7143663432e3520d
+SHA1: 56980e1ee58b539fe17a05db4a70c3c855c71fba
+MD5sum: 7e5d2409e5e29dc607ebfed70f983867
+Description: debug symbols for libsgx-urts
+Build-Ids: 77ed2293fd2722cf126bb123e6bf51323594e28f
+
+Package: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 2122
+Depends: libc6 (>= 2.17), libcurl4 (>= 7.16.2), libgcc1 (>= 1:3.0), libprotobuf10, libssl1.1 (>= 1.1.1), libstdc++6 (>= 7)
+Homepage: https://github.com/intel/linux-sgx
+Priority: optional
+Section: utils
+Filename: pool/main/s/sgx-aesm-service/sgx-aesm-service_2.15.101.1-bionic1_amd64.deb
+Size: 532384
+SHA256: 9a9f25f5167f380dc6045e3b1043b2e60f8c1ae6456f2da347882df63d321f7c
+SHA1: c12a81b1b1554cb571ed70ffa5ca97c5d292792d
+MD5sum: 260670a2c928d8cc9db6663c836d89bc
+Description: Intel(R) Software Guard Extensions AESM Service
+
+Package: sgx-aesm-service-dbgsym
+Package-Type: ddeb
+Source: sgx-aesm-service
+Version: 2.15.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 7227
+Depends: sgx-aesm-service (= 2.15.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/s/sgx-aesm-service/sgx-aesm-service-dbgsym_2.15.101.1-bionic1_amd64.deb
+Size: 6765752
+SHA256: b8a867bb20464f956936d75cc7d8f9618ce102fcd48ce5914c238e36ca8d14a1
+SHA1: 72279261e1277d6f3bfe2a1d784f99cf9fb568b1
+MD5sum: 92f03177a1883cc5ab05cd4ba6730033
+Description: debug symbols for sgx-aesm-service
+Build-Ids: 254ed99ae3ea3258899b1bceb9f0a2634eea1e1e 3f6f414a673f294f7fbfdc9436a7aa76a50492f0 73f954d80db3afe9d50c5494dcc55d3d92234c2e 7e78f9a000852cab5230f2b1ad6f1cc27aa255f6 a4708e5eab5a0797401a40e135da1620b52333ad ceb37a5d3fe977f3b6958a37e0eebde4abc7fbb8 e3fe057e6b8b3a79dc9e16696ff6c7be345fbfd9
+
+Package: sgx-dcap-pccs
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: <xiangquan.liu@intel.com>
+Installed-Size: 3644
+Depends: npm, nodejs, build-essential
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: web
+Filename: pool/main/s/sgx-dcap-pccs/sgx-dcap-pccs_1.12.101.1-bionic1_amd64.deb
+Size: 1225232
+SHA256: 0079e0bf860e719a73b2de180c5b9feeca1d716dfd2991b4ddfd06997be8e4ed
+SHA1: 844f63451bc5465b546aea12c2ec462cdd7362ff
+MD5sum: 501c482f09c1d54908832862830b3ba2
+Description: Intel(R) Software Guard Extensions PCK Caching Service
+
+Package: sgx-pck-id-retrieval-tool
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: Junli Sun <junli.sun@intel.com>
+Installed-Size: 145
+Depends: libc6 (>= 2.14), libcurl4 (>= 7.16.2), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Recommends: libsgx-urts (>= 2.13), libsgx-dcap-ql (>= 1.12.101.1-bionic1), libsgx-ra-uefi (>= 1.12.101.1-bionic1)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: misc
+Filename: pool/main/s/sgx-pck-id-retrieval-tool/sgx-pck-id-retrieval-tool_1.12.101.1-bionic1_amd64.deb
+Size: 38452
+SHA256: e974a5cb346af1dbf8ed9656238f2d14b0d65fc61194f474b1d6a0263d9708ea
+SHA1: eb45506f9cc58497875ceebc23812141522c6382
+MD5sum: 330e0f35b689366daf97e3171bf687f5
+Description: Intel(R) Software Guard Extensions: this tool is used to collect the platform information to retrieve the PCK certs from PCS(Provisioning Certification Server)
+
+Package: sgx-pck-id-retrieval-tool-dbgsym
+Package-Type: ddeb
+Source: sgx-pck-id-retrieval-tool
+Version: 1.12.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Junli Sun <junli.sun@intel.com>
+Installed-Size: 63
+Depends: sgx-pck-id-retrieval-tool (= 1.12.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/s/sgx-pck-id-retrieval-tool/sgx-pck-id-retrieval-tool-dbgsym_1.12.101.1-bionic1_amd64.deb
+Size: 9940
+SHA256: 8c52baa53855bb2801436f610240442a715a88002ba976bd057e12d6fe03d000
+SHA1: 51121d87ff30125f8c406bac6fd49c378fc494ce
+MD5sum: 0a410efa8e8171d07a8289da9d7498cf
+Description: debug symbols for sgx-pck-id-retrieval-tool
+Build-Ids: 2c75e474ca53e367d8dbfebadf49b4f6edd9b2af 9a1f69ae0fecc11010f5326bcd91778ebc4226fc dbc6a22fcec0bd0b0f690cabc28bf1d5c7ddab20
+
+Package: sgx-ra-service
+Version: 1.12.101.1-bionic1
+Architecture: amd64
+Maintainer: Junli Sun <junli.sun@intel.com>
+Installed-Size: 98
+Depends: libc6 (>= 2.14), libcurl4 (>= 7.16.2), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libsgx-ra-uefi (>= 1.12.101.1-bionic1), libsgx-ra-network (>= 1.12.101.1-bionic1)
+Homepage: https://github.com/intel/SGXDataCenterAttestationPrimitives
+Priority: optional
+Section: misc
+Filename: pool/main/s/sgx-ra-service/sgx-ra-service_1.12.101.1-bionic1_amd64.deb
+Size: 22060
+SHA256: 0e52c33523b1a1511f0d05c2c213695992328eadb39e2ee80deb0b9b2b02ef99
+SHA1: 3c23f5d76e7f2d082dded806442566bc396be56d
+MD5sum: 17de24314fa6110ecabbc0701fc18905
+Description: Intel(R) Software Guard Extensions Multi-Package Registration Agent Service
+ Enables SGX Remote attestation for Multi-Package platforms
+
+Package: sgx-ra-service-dbgsym
+Package-Type: ddeb
+Source: sgx-ra-service
+Version: 1.12.101.1-bionic1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Junli Sun <junli.sun@intel.com>
+Installed-Size: 38
+Depends: sgx-ra-service (= 1.12.101.1-bionic1)
+Priority: optional
+Section: debug
+Filename: pool/main/s/sgx-ra-service/sgx-ra-service-dbgsym_1.12.101.1-bionic1_amd64.deb
+Size: 6300
+SHA256: d33e5de3ed769790bfde27c162f0693b1971cb96d6795a0776b18608ac0085d7
+SHA1: 45b94248860e4eafcf1f1eefb7dced6d5c57353d
+MD5sum: 5bcab8c2e2ea43942d9cee0760da1f85
+Description: debug symbols for sgx-ra-service
+Build-Ids: de95cdf636e08a52d85011212ca3da53950b98ee f4b60f411c7c7f16c9262d084bacd58e86c316fc
+
