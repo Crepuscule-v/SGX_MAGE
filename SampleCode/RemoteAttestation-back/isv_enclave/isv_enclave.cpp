@@ -222,7 +222,7 @@ sgx_status_t enclave_init_ra(
     {
         int busy_retry_times = 2;
         do{
-            ret = sgx_create_rsa_key_pair();
+            ret = sgx_create_pse_session();
         }while (ret == SGX_ERROR_BUSY && busy_retry_times--);
         if (ret != SGX_SUCCESS)
             return ret;
@@ -234,7 +234,7 @@ sgx_status_t enclave_init_ra(
 #endif
     if(b_pse)
     {
-        sgx_free_rsa_key();
+        sgx_close_pse_session();
         return ret;
     }
     return ret;

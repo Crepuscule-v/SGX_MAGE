@@ -1,5 +1,7 @@
+.\" *********************************** start of \input{common.tex}
+.\" *********************************** end of \input{common.tex}
 '\" t
-.\" Manual page created with latex2man on Thu Aug 16 09:44:44 MDT 2007
+.\" Manual page created with latex2man on 2022年 03月 21日 星期一 10:11:14 CST
 .\" NOTE: This file is generated, DO NOT EDIT.
 .de Vb
 .ft CW
@@ -10,7 +12,7 @@
 
 .fi
 ..
-.TH "UNW\\_GET\\_ACCESSORS" "3" "16 August 2007" "Programming Library " "Programming Library "
+.TH "UNW\\_GET\\_ACCESSORS" "3" "21 March 2022" "Programming Library " "Programming Library "
 .SH NAME
 unw_get_accessors
 \-\- get pointer to accessor call\-backs 

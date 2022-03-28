@@ -328,7 +328,7 @@ IPP_LIBS_DIR    := $(SGX_IPP_DIR)/lib/linux/intel64/$(IPP_SUBDIR)
 LD_IPP          := -lippcp
 
 ######## SGX SDK Settings ########
-SGX_SDK ?= /home/crepuscule/Desktop/SGX_Mage/linux-sgx/linux/installer/bin/sgxsdk
+SGX_SDK ?= $HOME/linux-sgx-mage/linux/installer/bin/sgxsdk
 SGX_HEADER_DIR ?= $(SGX_SDK)/include
 
 ifeq ($(ARCH), x86)

@@ -931,22 +931,22 @@ CTAGS = ctags
 am__DIST_COMMON = $(srcdir)/Makefile.in \
 	$(srcdir)/libunwind-generic.pc.in $(top_srcdir)/config/depcomp
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind/config/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind/config/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = ar
 ARCH = X86_64
-AUTOCONF = ${SHELL} /home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind/config/missing autoconf
-AUTOHEADER = ${SHELL} /home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind/config/missing autoheader
-AUTOMAKE = ${SHELL} /home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind/config/missing automake-1.15
-AWK = mawk
+AUTOCONF = ${SHELL} /home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind/config/missing autoconf
+AUTOHEADER = ${SHELL} /home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind/config/missing autoheader
+AUTOMAKE = ${SHELL} /home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind/config/missing automake-1.15
+AWK = gawk
 BACKTRACELIB = 
 CC = gcc
 CCAS = gcc
 CCASDEPMODE = depmode=gcc3
-CCASFLAGS = -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE -DNDEBUG
+CCASFLAGS = -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind=/libunwind   -D_GNU_SOURCE -DNDEBUG
 CCDEPMODE = depmode=gcc3
-CFLAGS = -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare
+CFLAGS = -Wjump-misses-init -Wstrict-prototypes -Wunsuffixed-float-constants -fstack-protector-strong -O2 -D_FORTIFY_SOURCE=2 -UDEBUG -DNDEBUG -ffunction-sections -fdata-sections -Wall -Wextra -Winit-self -Wpointer-arith -Wreturn-type -Waddress -Wsequence-point -Wformat-security -Wmissing-include-dirs -Wfloat-equal -Wundef -Wshadow -Wcast-align -Wconversion -Wredundant-decls -DITT_ARCH_IA64 -ffreestanding -fvisibility=hidden -fpie -fno-strict-overflow -fno-delete-null-pointer-checks -B/usr/local/bin -std=c99 -fno-builtin -DHAVE_SGX=1 -fPIC -DUNW_LOCAL_ONLY -fdebug-prefix-map=/home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind=/libunwind  -fexceptions -Wall -Wsign-compare
 CPP = gcc -E
 CPPFLAGS =  -D_GNU_SOURCE -DNDEBUG
 CXX = g++
@@ -972,7 +972,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LATEX2MAN = 
+LATEX2MAN = /usr/bin/latex2man
 LD = /usr/local/bin/ld -m elf_x86_64
 LDFLAGS = 
 LDFLAGS_NOSTARTFILES = -XCClinker -nostartfiles
@@ -987,7 +987,7 @@ LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind/config/missing makeinfo
+MAKEINFO = ${SHELL} /home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind/config/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -1014,10 +1014,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = strip
 VERSION = 1.3.1
-abs_builddir = /home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind/src
-abs_srcdir = /home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind/src
-abs_top_builddir = /home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind
-abs_top_srcdir = /home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind
+abs_builddir = /home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind/src
+abs_srcdir = /home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind/src
+abs_top_builddir = /home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind
+abs_top_srcdir = /home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -1051,7 +1051,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/crepuscule/Desktop/SGX_Mage/linux-sgx/sdk/cpprt/linux/libunwind/config/install-sh
+install_sh = ${SHELL} /home/lab/linux-sgx-mage/sdk/cpprt/linux/libunwind/config/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale

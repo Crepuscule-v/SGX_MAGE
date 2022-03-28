@@ -82,7 +82,7 @@ else
 endif
 
 App_Cpp_Files := $(wildcard App/*.cpp)
-App_Include_Paths := -I$(SGX_SDK)/include -I./Include
+App_Include_Paths := -I$(SGX_SDK)/include -I./Include  -I../../common/inc
 
 App_C_Flags := -fPIC -Wno-attributes $(App_Include_Paths)
 # Three configuration modes - Debug, prerelease, release
