@@ -56,7 +56,7 @@ if(DEFINED ENV{SGX_SDK})
     message ("SGX_SDK environment variable defined: " $ENV{SGX_SDK})
 else()
     message ("SGX_SDK environment variable not defined, will be set to /opt/intel/sgxsdk")
-    set(ENV{SGX_SDK} /opt/intel/sgxsdk)
+    set(ENV{SGX_SDK} /opt/intel/sgxsdk))
 endif()
 set(SGX_HEADER_DIR $ENV{SGX_SDK}/include)
 

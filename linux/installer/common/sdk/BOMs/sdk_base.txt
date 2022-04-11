@@ -166,7 +166,7 @@ DeliveryName	InstallName	FileCheckSum	FileFeature	FileOwner
 <deliverydir>/SampleCode/RemoteAttestation/isv_enclave/isv_enclave.cpp	<installdir>/package/SampleCode/RemoteAttestation/isv_enclave/isv_enclave.cpp	0	main	STP
 <deliverydir>/SampleCode/RemoteAttestation/isv_enclave/isv_enclave.edl	<installdir>/package/SampleCode/RemoteAttestation/isv_enclave/isv_enclave.edl	0	main	STP
 <deliverydir>/SampleCode/RemoteAttestation/isv_enclave/isv_enclave.lds	<installdir>/package/SampleCode/RemoteAttestation/isv_enclave/isv_enclave.lds	0	main	STP
-<deliverydir>/SampleCode/RemoteAttestation/isv_enclave/isv_enclave_private_test.pem	<installdir>/package/SampleCode/RemoteAttestation/isv_enclave/isv_enclave_private_test.pem	0	main	STP
+<deliverydir>/SampleCode/RemoteAttestation/isv_enclave/isv_enclave_private.pem	<installdir>/package/SampleCode/RemoteAttestation/isv_enclave/isv_enclave_private.pem	0	main	STP
 <deliverydir>/SampleCode/RemoteAttestation/Makefile	<installdir>/package/SampleCode/RemoteAttestation/Makefile	0	main	STP
 <deliverydir>/SampleCode/RemoteAttestation/README.txt	<installdir>/package/SampleCode/RemoteAttestation/README.txt	0	main	STP
 <deliverydir>/SampleCode/RemoteAttestation/.project	<installdir>/package/SampleCode/RemoteAttestation/.project	0	main	STP

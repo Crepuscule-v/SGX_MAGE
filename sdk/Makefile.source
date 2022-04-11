@@ -200,6 +200,7 @@ sgx_pcl:
 	$(MAKE) -C protected_code_loader
 
 .PHONY: sgx_mage
+sgx_mage:
 	$(MAKE) -C mage/
 
 .PHONY: openmp
